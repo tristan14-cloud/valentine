@@ -1,0 +1,95 @@
+body{
+    background-image: url(restaurant.webp);
+    padding-top: 56px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.c-slide{
+}
+
+.c-item{
+height: 500px;
+}
+
+.c-img{
+height: 100%;
+object-fit: cover;
+}
+
+.artikel{
+    text-align: center;
+    border-radius: 180;
+    margin-top: 70px;
+}
+
+.jamdigital{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.waktu {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.loader {
+    position: relative;
+    transform: scale(2);
+    border-radius: 50%;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  
+  .loader::after {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    display: block;
+    border-left: 1px solid #fff;
+    content: '';
+    left: 14px;
+    border-radius: 1px;
+    top: 4px;
+    animation-duration: 1s;
+  }
+  
+  .loader::before {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    display: block;
+    border-left: 1px solid #fff;
+    content: '';
+    left: 14px;
+    border-radius: 1px;
+    top: 4px;
+    animation-duration: 40s;
+  }
+  
+  .loader::before,.loader::after {
+    transform-origin: bottom;
+    animation-name: dial;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes dial {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
